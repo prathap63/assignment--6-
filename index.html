@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: rgba(0, 0, 0, 0.6) url('travel2.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            background-blend-mode: darken;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        header {
+            width: 100%;
+            background-color: #514c49;
+            padding: 20px 0;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: black;
+        }
+
+        header h1 {
+            font-size: 32px;
+            color: white;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Content Styling */
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: whitesmoke;
+        }
+
+        .content h3 {
+            font-family: sans-serif;
+            font-size: 24px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .content p {
+            font-size: 18px;
+            margin-top: 15px;
+            line-height: 1.5;
+            color: #d1d1d1;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Buttons section styling for bottom-right corner */
+        .button-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Adds space between buttons */
+        }
+
+        .action-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .action-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Ensure responsive layout */
+        @media (max-width: 768px) {
+            .content h1 {
+                font-size: 36px;
+            }
+            .content h3 {
+                font-size: 18px;
+            }
+            .content p {
+                font-size: 16px;
+            }
+
+            .action-button {
+                font-size: 16px;
+                padding: 12px 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <h1>Travel Booking System</h1>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="login.css">LOGIN</a></li>
+                <li><a href="registration.html">SIGN UP</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>"Book your dream destinations effortlessly and enjoy exclusive deals on flights, hotels, and vacation packages."</h1>
+        <p>Start your journey with us by signing up or logging in. Choose your destination, and let us take care of the rest.</p>
+    </div>
+
+    <!-- Buttons Section in Bottom Right Corner -->
+    <div class="button-container">
+        <a href="packages.html" class="action-button">Explore Packages</a>
+        <a href="help.html" class="action-button">Need Help?</a>
+    </div>
+</body>
+</html>
